@@ -5,30 +5,53 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #dff6ff;
+            background: linear-gradient(to right, #a1c4fd, #c2e9fb);
             margin: 0;
             padding: 0;
         }
 
         .weather-box {
-            width: 400px;
-            margin: 50px auto;
+            width: 420px;
+            margin: 60px auto;
             background-color: white;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
             text-align: center;
             color: #2563eb;
+            margin-bottom: 10px;
         }
 
         h2 {
             color: #0f172a;
+            margin-top: 25px;
         }
 
         p {
             font-size: 18px;
+            margin: 8px 0;
+        }
+
+        .emoji {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: block;
+            margin-top: 25px;
+            text-align: center;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -37,8 +60,10 @@
     <div class="weather-box">
         <h1>Weather Website</h1>
 
+        <div class="emoji">☀️</div>
+
         <h2>Today's Weather</h2>
-        <div>
+        <div class="section">
             <p><strong>City:</strong> Sofia</p>
             <p><strong>Temperature:</strong> 18°C</p>
             <p><strong>Condition:</strong> Sunny</p>
@@ -47,12 +72,16 @@
         </div>
 
         <h2>Tomorrow's Forecast</h2>
-        <div>
+        <div class="section">
             <p><strong>Temperature:</strong> 16°C</p>
-            <p><strong>Condition:</strong> Cloudy</p>
+            <p><strong>Condition:</strong> Cloudy ☁️</p>
             <p><strong>Humidity:</strong> 70%</p>
             <p><strong>Wind Speed:</strong> 10 km/h</p>
         </div>
+
+        <a href="https://www.weather.com" target="_blank">
+            View more detailed weather
+        </a>
     </div>
 </body>
 </html>
